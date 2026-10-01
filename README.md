@@ -16,7 +16,7 @@ A lightweight Byte-Pair Encoding tokenizer built from scratch in Python.
 Most modern language models rely on Byte-Pair Encoding (BPE) to turn raw text into subwords and numbers. 
 
 Instead of relying on heavy third-party libraries, this project implements a working BPE tokenizer from scratch to show exactly how subword merging, vocabulary creation, and token encoding operate under the hood.
-
+> **Note:** *Built single-handedly with a broken keyboard and a mouse that is actively fighting for its life.*
 ## Tech Stack
 
 | Technology | Purpose |
