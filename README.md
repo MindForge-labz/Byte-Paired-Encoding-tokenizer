@@ -63,8 +63,10 @@ print("Token IDs:", token_ids)
 
 <br>
 
-```markdown
+
 ## How It Works
+```markdown
+
 
 1. **Initial Setup:** Loads the base ASCII character set into the vocabulary.
 2. **Frequency Counting:** Scans the text for adjacent character pairs.
