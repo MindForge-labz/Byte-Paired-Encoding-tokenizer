@@ -11,6 +11,11 @@ A lightweight Byte-Pair Encoding tokenizer built from scratch in Python.
 
 </div>
 
+<div align="center">
+  <b>Built by Aarav Sureka</b>
+</div>
+
+
 ## Overview
 
 Most modern language models rely on Byte-Pair Encoding (BPE) to turn raw text into subwords and numbers. 
