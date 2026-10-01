@@ -1,40 +1,44 @@
-# Byte-Pair Encoding (BPE) Tokenizer
+<div align="center">
 
-![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)
-![Framework](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
-![Status](https://img.shields.io/badge/status-work--in--progress-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
+# ⚡ Byte-Pair Encoding (BPE) Tokenizer
 
-A lightweight, from-scratch implementation of a **Byte-Pair Encoding (BPE) Tokenizer** in Python and PyTorch. Designed to demonstrate how subword tokenization models transform raw text into numerical token sequences for Natural Language Processing (NLP) and Large Language Models (LLMs).
+*A lightweight, zero-dependency subword tokenization engine built from scratch in Python.*
 
-> *Built single-handedly with passion, a broken keyboard, and a barely working mouse.* 🚀
+[![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![PyTorch](https://img.shields.io/badge/PyTorch-Supported-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org)
+[![Status](https://img.shields.io/badge/Build-Active_Dev-ff69b4?style=for-the-badge)](https://github.com)
+[![License](https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge)](LICENSE)
 
----
+<p align="center">
+  <a href="#-about-the-project">About</a> •
+  <a href="#-key-features">Features</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-architecture">Architecture</a> •
+  <a href="#-roadmap">Roadmap</a>
+</p>
 
-## Features
-
-- **Custom Vocabulary Building:** Automatically seeds the initial vocabulary with standard alphanumeric characters, punctuation, and whitespace.
-- **Iterative Merging Algorithm:** Dynamically identifies and merges the most frequent adjacent character pairs across successive training iterations.
-- **Persistent Vocabulary Storage:** Automatically serializes learned vocabulary mappings to JSON (`text.json`) for persistence across runs.
-- **Subword Encoding & Decoding:** Maps arbitrary raw text sequences to learned subword tokens and converts token ID lists back into continuous text strings.
-
----
-
-## Tech Stack
-
-| Component | Technology | Description |
-| :--- | :--- | :--- |
-| **Language** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | Core implementation language |
-| **Deep Learning** | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white) | Tensor framework foundation |
-| **Data Mappings** | `json` / `collections.Counter` | Vocabulary persistence and frequency counting |
+</div>
 
 ---
 
-## Quick Start
+## 📌 About The Project
 
-### Prerequisites
+Tokenization is the foundational bedrock of modern Large Language Models (LLMs) like GPT-4, LLaMA, and Claude. Before text enters a Transformer, Byte-Pair Encoding converts raw character strings into dense integer sequences.
 
-Ensure you have Python 3.8+ and PyTorch installed:
+This repository hosts a clean, ground-up implementation of a **BPE Tokenizer**. It demonstrates the exact mechanics of subword merging, vocabulary expansion, and token-to-ID mapping without hiding behind heavy black-box abstractions.
 
-```bash
-pip install torch
+> 🛠️ **Developer Note:** *Engineered with 100% manual determination, a broken keyboard, and a barely functional mouse.*
+
+---
+
+## ✨ Key Features
+
+- **📊 Dynamic Frequency Merging:** Scans input corpora to identify and collapse high-frequency token pairs iteratively.
+- **🔤 Base Vocabulary Seeding:** Pre-populates standard alphanumeric characters, punctuation, and whitespace tokens automatically.
+- **💾 Auto-Persistence:** Exports updated vocabulary indexes to local JSON storage (`text.json`) after every merge step.
+- **🔄 Two-Way Conversion:** Full support for `encode()` (Text → Subwords), `tokenizer()` (Subwords → Integer IDs), and `decode()` (Subwords → String).
+
+---
+
+## 🛠️ Tech Stack
