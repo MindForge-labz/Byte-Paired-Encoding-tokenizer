@@ -79,6 +79,8 @@ print("Token IDs:", token_ids)
 - [ ] Configurable target vocabulary size cap
 
 ---
+```
+
 
 <div align="center">
   <b>Built by Aarav Sureka</b>
