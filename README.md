@@ -58,6 +58,7 @@ print("Token IDs:", token_ids)
 ---
 
 ### Section 6: How It Works & Roadmap
+```
 
 ```markdown
 ## How It Works
