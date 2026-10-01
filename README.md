@@ -1,52 +1,40 @@
-# Byte-Paired-Encoding-tokenize
+# Byte-Pair Encoding (BPE) Tokenizer
 
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)
+![Framework](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![Status](https://img.shields.io/badge/status-work--in--progress-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-BPE is byte-paired-encoding, it's a tokenizer used mainly for NLP's and LLM's.
-So far ours is a Work In Progress and it's progress will be updated here:
+A lightweight, from-scratch implementation of a **Byte-Pair Encoding (BPE) Tokenizer** in Python and PyTorch. Designed to demonstrate how subword tokenization models transform raw text into numerical token sequences for Natural Language Processing (NLP) and Large Language Models (LLMs).
 
-* 1st October: Encode function, Merge function, Train function, Tokenizer function and Decode function created. Currently works with text's but yet to become proffesinal grade.
+> *Built single-handedly with passion, a broken keyboard, and a barely working mouse.* 🚀
 
-Fully Built by Aarav Sureka
+---
 
+## Features
 
+- **Custom Vocabulary Building:** Automatically seeds the initial vocabulary with standard alphanumeric characters, punctuation, and whitespace.
+- **Iterative Merging Algorithm:** Dynamically identifies and merges the most frequent adjacent character pairs across successive training iterations.
+- **Persistent Vocabulary Storage:** Automatically serializes learned vocabulary mappings to JSON (`text.json`) for persistence across runs.
+- **Subword Encoding & Decoding:** Maps arbitrary raw text sequences to learned subword tokens and converts token ID lists back into continuous text strings.
 
-DO NOT mind comments any coments
+---
 
+## Tech Stack
 
+| Component | Technology | Description |
+| :--- | :--- | :--- |
+| **Language** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | Core implementation language |
+| **Deep Learning** | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white) | Tensor framework foundation |
+| **Data Mappings** | `json` / `collections.Counter` | Vocabulary persistence and frequency counting |
 
+---
 
+## Quick Start
 
+### Prerequisites
 
+Ensure you have Python 3.8+ and PyTorch installed:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Made with 1 person, a broken keyboard and a barely working mouse. 
+```bash
+pip install torch
