@@ -12,7 +12,7 @@ class BPE:
     def __init__(self):
         self.merges = []
         try:
-            with open("text.json", "r") as file:  # THis saves it so it can remember it for next time
+            with open("bpe.json", "r") as file:  # THis saves it so it can remember it for next time
                 that = json.load(file)
         except:
             that = {}
@@ -81,7 +81,7 @@ class BPE:
         words = list(text.lower())
         for _ in range(no_times):
             words = self.merge(words)
-        with open("text.json", "w") as file:  # THis saves it so it can remember it for next time
+        with open("BPE.json", "w") as file:  # THis saves it so it can remember it for next time
             json.dump(self.vocab_list, file)
         return words
 
