@@ -33,7 +33,7 @@ Instead of relying on heavy third-party libraries, this project implements a wor
 
 ## Key Features
 
-- **Dynamic Pair Merging:** Automatically identifies high-frequency character pairs and merges them across iterations.
+- **Dynamic Pair Merging:** Automatically identifies high-frequency character pairs and merges them across iterations. 
 - **Base Vocabulary Seeding:** Initializes default alphanumeric characters, punctuation, and whitespace.
 - **Persistence:** Automatically dumps updated vocabulary mappings to `text.json`.
 - **Bidirectional Processing:** Supports encoding raw text to token IDs and decoding IDs back into strings.
