@@ -91,6 +91,11 @@ print("Token IDs:", token_ids)
 ---
 ```
 
+Versions:
+
+* beta0.4: First version, used regular string checking
+* beta0.5: Second version, now upgraded it to use tuples checking instead so that it remembers that X was next to Y and YX != XY
+
 
 <div align="center">
   <b>Built by Aarav Sureka</b>
