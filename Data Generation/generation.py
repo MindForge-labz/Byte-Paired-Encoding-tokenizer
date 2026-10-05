@@ -28,3 +28,22 @@ try:
             break
 except Exception as e:
     print(f"Error fetching web words: {e}")
+
+
+
+idx = 0
+while len(vocab) < TARGET_VOCAB_SIZE:
+    token = f"tok_{idx}"
+    if token not in vocab:
+        vocab[token] = len(vocab)
+    idx += 1
+
+
+with open("../Training/text.json", "w", encoding="utf-8") as f:
+    json.dump(vocab, f, indent=4)
+
+
+with open("../Training/merges.json", "w", encoding="utf-8") as f:
+    json.dump([], f, indent=4)
+
+print(f"Successfully generated text.json with {len(vocab):,} tokens!")
