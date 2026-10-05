@@ -1,4 +1,4 @@
-#Data generation
+## Data generation
 
 
 This is mainly used for making large forms of data for LLM's, feel free to use the model, it totally does not crash your computer.
